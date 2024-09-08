@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #f0f2f5;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+/* Form Section Styles */
+.form-section, .resume-section {
+    width: 45%;
+    background: linear-gradient(135deg, #f1e9e9, #275fd6);
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+h2, h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+label {
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #333;
+}
+
+input, textarea {
+    margin-top: 8px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    transition: border 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border: 1px solid #007bff;
+    outline: none;
+    background-color: white;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+button {
+    margin-top: 25px;
+    padding: 12px;
+    background: linear-gradient(135deg, #ba35db, #375ba8);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #b0c2b7, #acc47f);
+}
+/* Resume Section Styling */
+.resume-section h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.resume-section p, .resume-section ul {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.resume-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.resume-section ul li {
+    margin-bottom: 8px;
+}
+
+/* Enhanced Resume Design */
+.resume-section {
+    background: linear-gradient(135deg, #f1e9e9, #113788);
+}
+
+.resume-section h3 {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+}
+
+.resume-section p {
+    margin-bottom: 15px;
+}
+
+/* For Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .form-section, .resume-section {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+}
+/* Editable section style */
+[contenteditable="true"] {
+    border: 2px dashed #4CAF50;
+    padding: 6px;
+    background-color: #f1f8f6;
+    outline: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Editable section focus effect */
+[contenteditable="true"]:focus {
+    background-color: #e6f4ea;
+    border-color: #388e3c;
+}
+
+/* Smooth transition for the hover effect */
+[contenteditable="true"]:hover {
+    background-color: #eaf7f0;
+}
+
+/* Disabled (non-editable) sections */
+[contenteditable="false"] {
+    border: none;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #f0f2f5;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.form-section, .resume-section {
+    width: 45%;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+/* Button styling */
+button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

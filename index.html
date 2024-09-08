@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique Path and Shareable Link</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Form Section to Capture Input -->
+        <div class="form-section">
+            <h2>Resume Builder</h2>
+            <form id="resumeForm">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" required>
+
+                <label for="about">About Me:</label>
+                <textarea id="about" required></textarea>
+
+                <label for="education">Highest Qualification:</label>
+                <input type="text" id="education" required>
+
+                <label for="experience">Latest Job Title:</label>
+                <input type="text" id="experience" required>
+
+                <label for="skills">Skills (comma-separated):</label>
+                <input type="text" id="skills" required>
+
+                <button type="submit">Generate Resume</button>
+            </form>
+        </div>
+
+        <!-- Resume Display Section -->
+        <div class="resume-section" id="resume">
+            <h1 id="resumeName">Your Name</h1>
+            <p id="resumeEmail">Email: your.email@example.com</p>
+            <p id="resumePhone">Phone: 123-456-7890</p>
+
+            <div id="resumeAbout">
+                <h3>About Me</h3>
+                <p>Tell us about yourself</p>
+            </div>
+
+            <div id="resumeEducation">
+                <h3>Education</h3>
+                <p>Highest qualification goes here</p>
+            </div>
+
+            <div id="resumeExperience">
+                <h3>Experience</h3>
+                <p>Your latest job title here</p>
+            </div>
+
+            <div id="resumeSkills">
+                <h3>Skills</h3>
+                <ul id="skillsList"></ul>
+            </div>
+
+            <!-- Shareable link section -->
+            <button id="edit-btn">Enable Editing</button>
+            <button id="download-btn">Download as PDF</button>
+            <div class="share-section">
+                <button id="share-btn">Share Link</button>
+                <input type="text" id="shareLink" readonly style="display: none;">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
